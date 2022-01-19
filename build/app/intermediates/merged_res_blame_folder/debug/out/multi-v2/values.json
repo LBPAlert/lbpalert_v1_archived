@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ekenedilichukwuilloh/Documents/Coding/flutterProj/test_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/ekenedilichukwuilloh/Desktop/SeniorDesign/lbpalert/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/ekenedilichukwuilloh/Documents/Coding/flutterProj/test_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/ekenedilichukwuilloh/Desktop/SeniorDesign/lbpalert/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
