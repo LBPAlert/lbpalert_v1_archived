@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		u6O53R5dHfxszs3qJRkljRRKobw=
+		NT+j6PDgJsiRo+Rdl9NbqGQHWcM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		wnbQo5KrlOf454yXgB2zu6dZVF8=
+		xaLODH01BtdJqvzOFiZGR4RZ3Xs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		frGcONcCKyiS2sClCDCkw9y3EOY=
+		gY5HxX2BAimjC3yb3x0zVZr0Iw4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -272,6 +272,10 @@
 		<data>
 		61VaLey9PoFZK7kQWTtm5JdWSzg=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/Trend.svg</key>
+		<data>
+		55/AUonb1QRZr646UETRFZY6jj8=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/User%20Icon.svg</key>
 		<data>
 		Ue+9zBFOlSCVtdyNp49YovY+VCw=
@@ -335,6 +339,14 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/images/apple-pay.png</key>
 		<data>
 		8SBHfIiZh1Ts4/JDeHsfw4TMeY8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/back.png</key>
+		<data>
+		b9OlB1u69dOCi3H0XV43yi923eM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/back2.jpeg</key>
+		<data>
+		GynqhqwifodpNa63zPWFdDSq1tA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/fedex-express.png</key>
 		<data>
@@ -434,7 +446,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		leWWsw+MWZSy0zUIB+Cd4PR8o0s=
+		SeTl4sgwLotr/f74obTxNY8Kki8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -446,7 +458,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		AAY1kJG73Ne1q9RBm1V3s2Ld5XA=
+		o4qW7rTR2TAPswQuYD6318C0lNA=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -885,11 +897,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u6O53R5dHfxszs3qJRkljRRKobw=
+			NT+j6PDgJsiRo+Rdl9NbqGQHWcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			yZ6zQyHU3xa6P4ZQpx1U+UO/z1F+6H9rfBAvR8FBXZQ=
+			83lv7gDDj6FXHFeGs9FaH/u5ldJrYPrXDvovIuqUK+M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -907,22 +919,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wnbQo5KrlOf454yXgB2zu6dZVF8=
+			xaLODH01BtdJqvzOFiZGR4RZ3Xs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7eqy+H7ePCcVfYoGJyqF5ppePSSMvCLgcRhPj/Du2Ig=
+			C9XiChHZ7FSwEafvu1U2ZRA3mbwPhPjQMRAKSWisZsY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			frGcONcCKyiS2sClCDCkw9y3EOY=
+			gY5HxX2BAimjC3yb3x0zVZr0Iw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hH//KiyH650gQBE+qWi26iIh9PCsC2xEiJC9ATVgU0c=
+			PkUJ3GNzCwmpBPZAHftPVEW8IxkK4w7dFyvdp3AZjO4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -1332,6 +1344,17 @@
 			A4o3Wez3oz6pOXoEXAEhh4+9F1ThIg2mdVZoYAfa0/Y=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/icons/Trend.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			55/AUonb1QRZr646UETRFZY6jj8=
+			</data>
+			<key>hash2</key>
+			<data>
+			VHLZY2AB+Nb0Bzj+XDPj7jEOh1IyOUoL9Bg2jJvGUJo=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/icons/User%20Icon.svg</key>
 		<dict>
 			<key>hash</key>
@@ -1506,6 +1529,28 @@
 			<key>hash2</key>
 			<data>
 			LvYN/tXYNgSQv7wO+b8kqUXp6kGTLjEAup4iltMPqj8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/back.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b9OlB1u69dOCi3H0XV43yi923eM=
+			</data>
+			<key>hash2</key>
+			<data>
+			rQBDcjkFRlnG6orfA9D0X4ljJsqbq3zX3HiNZv+DAFo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/back2.jpeg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GynqhqwifodpNa63zPWFdDSq1tA=
+			</data>
+			<key>hash2</key>
+			<data>
+			F6UkZ/JaeVb03LLsROu/3/1ncO6V5u0iWTVfEelTRJU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/fedex-express.png</key>
@@ -1776,11 +1821,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			leWWsw+MWZSy0zUIB+Cd4PR8o0s=
+			SeTl4sgwLotr/f74obTxNY8Kki8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8nxgcnoSfLT1PvLo6QRZHDB7PRe6X1Dt4qwFGIr7hQc=
+			qUR7vXHu0hEN1zeQYOjBHlCxgZKUIbniCMyl58Xjs0g=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1809,11 +1854,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AAY1kJG73Ne1q9RBm1V3s2Ld5XA=
+			o4qW7rTR2TAPswQuYD6318C0lNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HtpH5YmJbfv5oUVt5eXJ2FwKzPomM2NzlwTe10pk674=
+			V28x2bvBJ7ds4kWPYHFgn+hCnn0jneNkuicOyw/W/ec=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
