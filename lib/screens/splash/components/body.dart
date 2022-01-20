@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
-import 'package:shop_app/size_config.dart';
+import '/constants.dart';
+import '/screens/sign_in/sign_in_screen.dart';
+import '/size_config.dart';
 
 // This is the best practice
 import '../components/splash_content.dart';
@@ -16,18 +16,13 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "text": "Welcome to Tokoto, Let’s shop!",
-      "image": "assets/images/splash_1.png"
+      "text": "Welcome to LBPA, Take control of your lower back muscles now!",
+      "image": "assets/images/back.png"
     },
-    {
-      "text":
-          "We help people conect with store \naround United State of America",
-      "image": "assets/images/splash_2.png"
-    },
-    {
-      "text": "We show the easy way to shop. \nJust stay at home with us",
-      "image": "assets/images/splash_3.png"
-    },
+    // {
+    //   "text": ,
+    //   "image":
+    // },
   ];
   @override
   Widget build(BuildContext context) {
