@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		5llOp5n+PDkhJdMAC6HIbsdpsME=
+		drf0cHB818Jxede3hGLvKrYc3Qk=
 		</data>
 		<key>flutter_assets/assets/fonts/muli/Muli-Bold.ttf</key>
 		<data>
@@ -338,11 +338,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		7Jt1VzUkTmBMIqzT8+Exp0F3vXU=
+		j58ZaJgxEhtmGJxhHo73d32iYFI=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		07kA3sQMlHFusNSlm9PKiNqG2ck=
+		SeTl4sgwLotr/f74obTxNY8Kki8=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		cuieaQ9j+9gCTKYPRhW1tc4y4co=
+		GSdeSSVKlMZc4dGp6K8FmNf4taU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -381,11 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5llOp5n+PDkhJdMAC6HIbsdpsME=
+			drf0cHB818Jxede3hGLvKrYc3Qk=
 			</data>
 			<key>hash2</key>
 			<data>
-			kUEVb2AnxYRl6Gem+pKKHGUNBnMjYRBkqPIL5OIETjU=
+			0e7tw/NpYyRK7sbMQX5rILa1XE8FL0T8BAIKML1BzmA=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/fonts/muli/Muli-Bold.ttf</key>
@@ -1239,22 +1239,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Jt1VzUkTmBMIqzT8+Exp0F3vXU=
+			j58ZaJgxEhtmGJxhHo73d32iYFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZFODmTeagWrvsG4zM70kE2pUuv9LC65LEG0iTLSZR8s=
+			O2mgX/4QpiIaR3Relq6EGshnOo+RCjbxxYoqeo+kJuY=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			07kA3sQMlHFusNSlm9PKiNqG2ck=
+			SeTl4sgwLotr/f74obTxNY8Kki8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ceeQrkVLoNJDWaZgn1OcNFVRFVeNufX9SSh500Owcgw=
+			qUR7vXHu0hEN1zeQYOjBHlCxgZKUIbniCMyl58Xjs0g=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1272,11 +1272,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cuieaQ9j+9gCTKYPRhW1tc4y4co=
+			GSdeSSVKlMZc4dGp6K8FmNf4taU=
 			</data>
 			<key>hash2</key>
 			<data>
-			nc7zSGd5LPg51+X2B4gM/FLTg8moyL55+ErAW3mTHI0=
+			w1vt9GEbbsxDdWG+Cns8O0OA28qaaHi/gkQ1bDZezNk=
 			</data>
 		</dict>
 	</dict>
