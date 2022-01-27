@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/screens/trend/components/body.dart';
+import 'package:LBPAlert/screens/trend/components/body.dart';
 import '/components/coustom_bottom_nav_bar.dart';
 import '/enums.dart';
 

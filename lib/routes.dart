@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:shop_app/screens/trend/trend_screen.dart';
+import 'screens/trend/trend_screen.dart';
 import 'screens/complete_profile/complete_profile_screen.dart';
 import 'screens/forgot_password/forgot_password_screen.dart';
 import 'screens/home/home_screen.dart';
