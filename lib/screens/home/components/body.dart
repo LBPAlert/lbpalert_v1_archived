@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 
-import 'discount_banner.dart';
+import 'read_sensor_data.dart';
 import 'home_header.dart';
 
 class Body extends StatelessWidget {
@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenHeight(20)),
             //HomeHeader(),
             SizedBox(height: getProportionateScreenWidth(10)),
-            DiscountBanner(),
+            ReadSensorData(),
             SizedBox(height: getProportionateScreenWidth(30)),
             SizedBox(height: getProportionateScreenWidth(30)),
           ],
