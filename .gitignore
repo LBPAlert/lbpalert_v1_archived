@@ -74,6 +74,7 @@ local.properties
 
 # Google Services (e.g. APIs or Firebase)
 google-services.json
+GoogleService-Info.plist
 
 # Android related
 **/android/**/gradle-wrapper.jar
