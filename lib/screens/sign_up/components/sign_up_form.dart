@@ -1,9 +1,9 @@
+import 'package:LBPAlert/services/auth.dart';
 import 'package:flutter/material.dart';
 import '/components/custom_surfix_icon.dart';
 import '/components/default_button.dart';
 import '/components/form_error.dart';
 import '/screens/complete_profile/complete_profile_screen.dart';
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -13,10 +13,12 @@ class SignUpForm extends StatefulWidget {
 }
 
 class _SignUpFormState extends State<SignUpForm> {
+  final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
   String? email;
   String? password;
   String? conform_password;
+  String error = "";
   bool remember = false;
   final List<String?> errors = [];
 
@@ -49,14 +51,25 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
             text: "Continue",
-            press: () {
+            press: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                // if all are valid then go to success screen
-                Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                dynamic result =
+                    await _auth.registerEmailandPassword(email!, password!);
+                if (result == null) {
+                  setState(() {
+                    error = "Please supply a valid email";
+                  });
+                } else {
+                  // if all are valid then go to success screen
+                  Navigator.pushNamed(context, CompleteProfileScreen.routeName,
+                      arguments: {'uid': result.uid});
+                }
               }
             },
           ),
+          SizedBox(height: 12),
+          Text(error, style: TextStyle(color: kTextColor, fontSize: 14.0))
         ],
       ),
     );
