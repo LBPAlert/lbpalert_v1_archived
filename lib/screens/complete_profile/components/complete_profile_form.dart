@@ -1,9 +1,10 @@
+import 'package:LBPAlert/helper/keyboard.dart';
+import 'package:LBPAlert/screens/login_success/login_success_screen.dart';
+import 'package:LBPAlert/services/database.dart';
 import 'package:flutter/material.dart';
 import '/components/custom_surfix_icon.dart';
 import '/components/default_button.dart';
 import '/components/form_error.dart';
-import '/screens/otp/otp_screen.dart';
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -36,6 +37,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
 
   @override
   Widget build(BuildContext context) {
+    final arguments = ModalRoute.of(context)!.settings.arguments as Map;
+    final user_id = arguments["uid"];
+
     return Form(
       key: _formKey,
       child: Column(
@@ -50,10 +54,14 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(40)),
           DefaultButton(
-            text: "continue",
-            press: () {
+            text: "Register",
+            press: () async {
               if (_formKey.currentState!.validate()) {
-                Navigator.pushNamed(context, OtpScreen.routeName);
+                // Navigator.pushNamed(context, OtpScreen.routeName); DO WE NEED?
+                await DatabaseService(uid: user_id).UpdateUserData(
+                    firstName!, lastName!, phoneNumber!, address!);
+                KeyboardUtil.hideKeyboard(context);
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
           ),
@@ -69,7 +77,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         if (value.isNotEmpty) {
           removeError(error: kAddressNullError);
         }
-        return null;
+        address = value;
       },
       validator: (value) {
         if (value!.isEmpty) {
@@ -98,7 +106,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         if (value.isNotEmpty) {
           removeError(error: kPhoneNumberNullError);
         }
-        return null;
+        phoneNumber = value;
       },
       validator: (value) {
         if (value!.isEmpty) {
@@ -121,6 +129,19 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   TextFormField buildLastNameFormField() {
     return TextFormField(
       onSaved: (newValue) => lastName = newValue,
+      onChanged: (value) {
+        if (value.isNotEmpty) {
+          removeError(error: kNamelNullError);
+        }
+        lastName = value;
+      },
+      validator: (value) {
+        if (value!.isEmpty) {
+          addError(error: kNamelNullError);
+          return "";
+        }
+        return null;
+      },
       decoration: InputDecoration(
         labelText: "Last Name",
         hintText: "Enter your last name",
@@ -139,7 +160,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         if (value.isNotEmpty) {
           removeError(error: kNamelNullError);
         }
-        return null;
+        firstName = value;
       },
       validator: (value) {
         if (value!.isEmpty) {

@@ -7,10 +7,10 @@ import 'package:firebase_database/firebase_database.dart';
 // might need to change to StaefulWidget
 class ReadSensorData extends StatefulWidget {
   @override
-  ReadSensorDataState createState() => ReadSensorDataState();
+  _ReadSensorDataState createState() => _ReadSensorDataState();
 }
 
-class ReadSensorDataState extends State<ReadSensorData> {
+class _ReadSensorDataState extends State<ReadSensorData> {
   String sensorData = "Insert Data Here";
 
   DatabaseReference ref = FirebaseDatabase.instance.ref('SWE_test(1)');

@@ -1,9 +1,13 @@
+import 'package:LBPAlert/screens/splash/splash_screen.dart';
+import 'package:LBPAlert/services/auth.dart';
 import 'package:flutter/material.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
 class Body extends StatelessWidget {
+  final AuthService _auth = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -30,7 +34,10 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: "assets/icons/Log out.svg",
-            press: () {},
+            press: () async {
+              await _auth.signOut();
+              Navigator.pushNamed(context, SplashScreen.routeName);
+            },
           ),
         ],
       ),

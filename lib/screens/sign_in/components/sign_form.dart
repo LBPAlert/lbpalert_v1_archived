@@ -1,10 +1,10 @@
+import 'package:LBPAlert/services/auth.dart';
 import 'package:flutter/material.dart';
 import '/components/custom_surfix_icon.dart';
 import '/components/form_error.dart';
 import '/helper/keyboard.dart';
 import '/screens/forgot_password/forgot_password_screen.dart';
 import '/screens/login_success/login_success_screen.dart';
-
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -15,10 +15,13 @@ class SignForm extends StatefulWidget {
 }
 
 class _SignFormState extends State<SignForm> {
+  final AuthService _auth = AuthService();
+
   final _formKey = GlobalKey<FormState>();
   String? email;
   String? password;
   bool? remember = false;
+  String error = "";
   final List<String?> errors = [];
 
   void addError({String? error}) {
@@ -71,16 +74,26 @@ class _SignFormState extends State<SignForm> {
           FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(20)),
           DefaultButton(
-            text: "Continue",
-            press: () {
+            text: "Sign In",
+            press: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                // if all are valid then go to success screen
-                KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                dynamic result =
+                    await _auth.signInEmailandPassword(email!, password!);
+                if (result == null) {
+                  setState(() {
+                    error = "Could not sign in with those credentials";
+                  });
+                } else {
+                  // if all are valid then go to success screen
+                  KeyboardUtil.hideKeyboard(context);
+                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                }
               }
             },
           ),
+          SizedBox(height: 12),
+          Text(error, style: TextStyle(color: kTextColor, fontSize: 14.0))
         ],
       ),
     );
